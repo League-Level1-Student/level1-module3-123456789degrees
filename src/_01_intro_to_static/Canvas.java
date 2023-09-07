@@ -22,7 +22,6 @@ public class Canvas {
 
     public Canvas() {
         circles = new ArrayList<>();
-
         frame = new JFrame();
         frame.setTitle("Static Keyword Demo");
         frame.setPreferredSize(new Dimension(WIDTH, HEIGHT));
@@ -57,7 +56,7 @@ public class Canvas {
 
     public void addCircle(Circle circle) {
         circles.add(circle);
-
+        
         // Must place after adding new circle
         // no size - 1 to number starting from 1
         final int num = circles.size();
