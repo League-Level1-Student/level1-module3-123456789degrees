@@ -5,6 +5,10 @@ public class CowTimerRunner {
         /* Make a CowTimer, set its time and start it.
          * Use a short delay (seconds) when testing, then try with longer delays
          */
-        
-    }
+        CowTimer timer = new CowTimer();
+        timer.setTime(10);
+        for (int i = 0; i < 10; i++) {
+        	timer.start();
+        }
+    }  
 }
